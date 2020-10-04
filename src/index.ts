@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/consistent-type-imports */
-import jszip, { JSZipObject } from 'jszip'
+import type { JSZipObject } from './jszip'
+
+import jszip from 'jszip'
 
 export const JSZip: typeof import('./jszip') = jszip
 export type JSZip = typeof import('./jszip')
