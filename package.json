@@ -9,18 +9,13 @@
   "npm-defaults": {
     "type": "library",
     "template": {
-      "exclude": [
-        "webpack.config.js"
-      ]
+      "exclude": ["webpack.config.js"]
     }
   },
   "engines": {
     "node": ">=12"
   },
-  "files": [
-    "dist",
-    "package.json"
-  ],
+  "files": ["dist", "package.json"],
   "scripts": {
     "build": "webpack --version && webpack",
     "test": "concurrently \"yarn check:types\" \"jest test --maxWorkers=1\"",
@@ -40,7 +35,7 @@
     "tslib": "^2.0.1"
   },
   "devDependencies": {
-    "@zefiros/npm-defaults": "^0.2.0-beta.67",
+    "@zefiros/npm-defaults": "^0.2.0-beta.70",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "jszip": "^3.5.0",
     "typescript": "^4.0.2"
